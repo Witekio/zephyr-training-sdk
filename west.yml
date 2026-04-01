@@ -2,6 +2,8 @@ manifest:
   remotes:
   - name: zephyrrtos
     url-base: https://github.com/zephyrproject-rtos
+  - name: Witekio
+    url-base: git@github.com:Witekio
   projects:
   - name: zephyr
     remote: zephyrrtos
@@ -10,3 +12,8 @@ manifest:
       name-allowlist:
         - cmsis_6
         - hal_stm32
+  - name: zephyr-training-sdk-cjson
+    remote: Witekio
+    revision: main
+    path: modules/lib/cjson
+    submodules: true
