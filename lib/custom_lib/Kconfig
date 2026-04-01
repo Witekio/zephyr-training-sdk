@@ -1,0 +1,4 @@
+config custom_LIB
+    bool "Enable custom library"
+    help
+        Enable the custom lib.
